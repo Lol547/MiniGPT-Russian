@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+ENV/
+
+# Данные и модели
+*.pt
+*.pth
+*.h5
+*.hdf5
+checkpoints/
+tokenizer/
+dataset_cache/
+data/
+results/
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Системные
+.DS_Store
+Thumbs.db
+
+# Другое
+*.tmp
+*.bak
+*.orig
