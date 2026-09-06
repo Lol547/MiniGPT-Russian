@@ -1,0 +1,29 @@
+data:
+  dataset_name: "PotatoHD/ru-text-corpus"
+  train_docs: 200000
+  val_docs: 10000
+  sequence_length: 256
+  buffer_size: 50000
+
+model:
+  hidden_dim: 512
+  intermediate_dim: 2048
+  num_heads: 8
+  num_layers: 8
+  dropout: 0.2
+
+training:
+  batch_size: 16
+  epochs: 15
+  steps_per_epoch: 10000
+  val_steps: 500
+  warmup_steps: 10000
+  clip_grad: 1.0
+  label_smoothing: 0.03
+  weight_decay: 0.1
+
+tokenizer:
+  name: "ai-forever/rugpt3small_based_on_gpt2"
+
+seed: 42
+device: "cuda"
